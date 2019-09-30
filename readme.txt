@@ -11,26 +11,23 @@ License URI: LICENSE
 
 A starter theme called pixelsbretzels.
 
-== Description ==
+== Workflow Git ==
 
-Description
+- je me positionne sur develop (git checkout develop)
+- Je créer une branch basée sur develop (git branch feature/project-init)
+- Je me positionne sur cette nouvelle branch (git checkout feature/project-init)
+- Je fais les modifications, concernant l’initialisation technique (ajout des fichiers de base, ajout de la structure de fichier scss, ajout des dossiers d’aoutput des styles et de js)
+- Je commit et pousse sur le repo (git commit -m"J'ai cassé internet" && push)
+- Une fois que j’ai poussé toutes mes modifs, je récupère le lien de PR que retourne la console et je complète le descriptif de cette PR (je fais attention à la branch de destination qui doit rester develop pour l’instant), puis j’ajoute toute l’équipe en reviewer pour obtenir au moins une à deux validations des co-équipiers.
+Une fois les malidations obtenues, je merge la branch dans develop :
+- Je me positionne sur develop: git checkout develop
+- Je merge la branche : git merge feature/project-init
+- Je supprime la branche git branch -d feature/project (on oublie pas de vérifier avant si les changements sont visibles sur le site :clin_d'œil: )
+- On pousse sur le repo la version à jour de develop (git push)
+- J’ouvre une :bière: et je fête ce nouvel ajout de qualité
+----
+Une bonne resource : https://www.atlassian.com/git/tutorials/syncing (modifié) 
 
-== Installation ==
-
-1. In your admin panel, go to Appearance > Themes and click the Add New button.
-2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
-3. Click Activate to use your new theme right away.
-
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-pixelsbretzels includes support for Infinite Scroll in Jetpack.
-
-== Changelog ==
-
-= 1.0 - May 12 2015 =
-* Initial release
 
 == Credits ==
 
